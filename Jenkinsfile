@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/MnariMayar/DevOps-AppGestionDesProjets.git'
-            }
-        }
-
         stage('Build Backend') {
             steps {
                 dir('backend') {
