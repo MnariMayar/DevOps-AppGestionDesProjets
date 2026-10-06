@@ -4,12 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout SCM') {
-            steps {
-                git 'https://github.com/MnariMayar/DevOps-AppGestionDesProjets.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 dir('backend') {
